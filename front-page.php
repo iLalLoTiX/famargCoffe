@@ -99,18 +99,27 @@
         </div>
     </section>
 
-    <section class="ftco-menu">
+    
+    <section class="ftco-counter ftco-bg-dark img" id="section-about" style="background-image: url(<?php echo bloginfo('template_url');?>/images/vegetales.jpg);" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-7 heading-section text-center ftco-animate">
-                    <span class="subheading">Discover</span>
-                    <h2 class="mb-4">Our Products</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <span class="subheading">Descubre la calidad</span>
+                    <h2 style="color: white;" class="mb-4">Productos</h2>
+                    <p style="color: white;">Famarg tiene como criterio minuciosos estandares de calidad ¿Quieres saber más sobre nuestro productos? 
+                        selecciona el producto de tu preferencia y descubre las posibilidades con la calidad #Famarg</p>
+                    <ul class="action-icons">
+                        <li><span><i class="fa fa-info"></i> Ficha Tecnica</span></li>
+                        <li><span><i class="fa fa-eye"></i> Caracteristicas</span></li>
+                        <li><span><i class="fa fa-cutlery"></i> Recetas</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Productos Escritorio y Tabletas -->
     <section class="ftco-menu d-none col-md-12 d-sm-block">
         <div class="container">
             <div class="row d-md-flex">
@@ -136,7 +145,6 @@
                             ?>
                             </div>
                         </div>
-                        
                         <div class="d-none col-md-12 d-sm-block">
 
                             <div class="tab-content" id="v-pills-tabContent">
@@ -164,28 +172,28 @@
                                                     the_post_thumbnail( 'the_post_thumbnail', array( 'class' => 'img-fluid' ) );
                                                     }
                                                 ?>
-                                                    <span class="status">30%</span>
+                                                    <span class="status">Temporada</span>
                                                     <div class="overlay"></div>
                                                 </div>
                                                 <div class="text py-3 pb-4 px-3 text-center">
                                                     <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
                                                     <div class="d-flex">
                                                         <div class="pricing">
-                                                            <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
+                                                            <p class="price">SKU: 1111</p>
                                                         </div>
                                                     </div>
                                                     <div class="bottom-area d-flex px-3">
                                                         <div class="m-auto d-flex">
-                                                            <a href="<?php the_title();?>" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-                                                                <span><i class="fa fa-indent"></i></span>
+                                                            <a href="<?php the_permalink();?>" class="add-to-cart d-flex justify-content-center align-items-center text-center">
+                                                                <span style="color:white"><i class="fa fa-eye"></i></span>
                                                             </a>
                                                             
                                                             <?php global $post;
                                                                 if(get_the_tags()){
                                                                     foreach(get_the_tags($post->ID) as $tag)
                                                                     {
-                                                                        echo '<a href="' . get_tag_link($tag->term_id) . '" class="buy-now d-flex justify-content-center align-items-center mx-1"><span>
-                                                                        <i class="fa fa-book"></i></span></a>';
+                                                                        echo '<a href="' . get_tag_link($tag->term_id) . '" class="buy-now d-flex justify-content-center align-items-center mx-1"><span style="color:white">
+                                                                        <i class="fa fa-cutlery"></i></span></a>';
                                                                     }
                                                                 }
                                                             ?>
@@ -211,13 +219,14 @@
         </div>
     </section>
 
+    <!-- Productos Celulares -->
     <section class="ftco-menu d-xl-none d-lg-none d-md-none col-sm-12 ">
         <div class="row d-md-flex ">
             
         <div class="d-xl-none d-lg-none d-md-none col-sm-12 nav-link-wrap sticky">
             <div class="nav ftco-animate nav-pills justify-content-center">
                 <div class="row justify-content-center mb-5">
-                    <div class="nav-link active show" data-toggle="pill" role="tab" aria-selected="false">uwu</div>
+                    <div class="nav-link active show" id="cat-sm" data-toggle="pill" role="tab" aria-selected="false"><?php echo $testName[0];?></div>
                 </div>  
             </div>
         </div>
@@ -232,7 +241,7 @@
                                 
                         ?>
                             <div class="row">
-                            <h2 class="sticky">uwu</h2>
+                            <h2 class="sticky"><?php echo $testName[$i]; ?></h2>
                                 <?php 
                                 $args = array(
                                     'category_name'=>$testName[$i],
@@ -250,27 +259,27 @@
                                             the_post_thumbnail( 'the_post_thumbnail', array( 'class' => 'img-fluid' ) );
                                             }
                                         ?>
-                                            <span class="status">30%</span>
+                                            <span class="status">Temporada</span>
                                             <div class="overlay"></div>
                                         </div>
                                         <div class="text py-3 pb-4 px-3 text-center">
                                             <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
                                             <div class="d-flex">
                                                 <div class="pricing">
-                                                    <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
+                                                    <p class="price">SKU: 1111</p>
                                                 </div>
                                             </div>
                                             <div class="bottom-area d-flex px-3">
                                                 <div class="m-auto d-flex">
                                                     <a href="<?php the_title();?>" class="add-to-cart d-flex justify-content-center align-items-center text-center">
-                                                        <span><i class="fa fa-indent"></i></span>
+                                                        <span style="color:white"><i class="fa fa-aye"></i></span>
                                                     </a>
                                                     
                                                     <?php global $post;
                                                         if(get_the_tags()){
                                                             foreach(get_the_tags($post->ID) as $tag)
                                                             {
-                                                                echo '<a href="' . get_tag_link($tag->term_id) . '" class="buy-now d-flex justify-content-center align-items-center mx-1"><span>
+                                                                echo '<a href="' . get_tag_link($tag->term_id) . '" class="buy-now d-flex justify-content-center align-items-center mx-1"><span style="color:white">
                                                                 <i class="fa fa-book"></i></span></a>';
                                                             }
                                                         }

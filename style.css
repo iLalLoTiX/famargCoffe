@@ -13796,8 +13796,27 @@ textarea.form-control {
 }
 
 .sticky {
-    color: black;
     position: sticky;
-    top: 60px;
-    z-index: 9999;
+    top: 75px;
+    z-index: 1;
+}
+
+.action-icons li {
+    vertical-align: top;
+    display: inline;
+    font-size: 1.2em;
+    padding: 0.5em;
+    color: black;
+}
+
+.action-icons li span {
+    vertical-align: top;
+    display: inline;
+    font-size: 18px;
+    padding: 0.5em;
+    color: white;
+}
+
+.action-icons li span i {
+    color: white;
 }

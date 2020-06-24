@@ -84,13 +84,8 @@
          });
 
          function callback(event) {
-             var element = event.target;
-             var pages = event.page.index; // Number of pages
-
-             console.log(pages);
-             var dom = element[0];
-             console.log(dom);
-             console.log(element);
+             var dom = $('.active h2').text();
+             $('div #cat-sm').text(dom);
 
          }
      };
