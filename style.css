@@ -11573,6 +11573,12 @@ textarea.form-control {
     color: #fff;
 }
 
+.ftco-footer .ftco-footer-widget ul {
+    color: #fff;
+    padding-left: 0;
+    list-style: none;
+}
+
 .ftco-footer .ftco-footer-widget .btn-primary {
     background: #fff !important;
     border: 2px solid #fff !important;
@@ -13597,9 +13603,9 @@ textarea.form-control {
 /* line 1017, ../../Arafath/CL/December/229. Restaurant (Burger)/HTML/scss/_blog.scss */
 
 .blog-pagination .page-item.active .page-link {
-    background-color: #fbf9ff;
-    border-color: #f0e9ff;
-    color: #888888;
+    background-color: #fe5e10;
+    border-color: #c0c0c0;
+    color: #ffffff;
 }
 
 
@@ -13819,4 +13825,55 @@ textarea.form-control {
 
 .action-icons li span i {
     color: white;
+}
+
+
+/* LOADER FAMARG*/
+
+.awe-loading-wrapper {
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -75px;
+}
+
+.awe-loading-wrapper .awe-loading-icon {
+    font-size: 75px;
+    line-height: 1;
+    margin-bottom: 10px;
+    -webkit-animation-name: aweIcon;
+    animation-name: aweIcon;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.awe-loading-wrapper .awe-loading-icon img {
+    width: 100%;
+}
+
+.awe-loading-wrapper .awe-loading-icon .icon {
+    cursor: default;
+}
+
+.awe-loading-wrapper .progress {
+    background: #eee;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    height: 2px;
+}
+
+.awe-loading-wrapper .progress .progress-bar {
+    background: #80b435;
+    box-shadow: none;
+    width: 100%;
+    -webkit-animation-name: aweProgress;
+    animation-name: aweProgress;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
 }

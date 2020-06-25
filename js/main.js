@@ -91,6 +91,13 @@
      };
      carousel();
 
+     /* Menu para WORDPRESS*/
+     $('.navbar-nav li').addClass('nav-item dropdown');
+     $('.navbar-nav li a').addClass('nav-link');
+
+     $('ul .sub-menu').addClass('dropdown-menu');
+     $('ul .sub-menu li a').addClass('dropdown-item');
+
      $('nav .dropdown').hover(function() {
          var $this = $(this);
          // 	 timer;
@@ -281,6 +288,8 @@
      });
 
      $('.appointment_time').timepicker();
+
+     $('ul .list-unstyled > ul').addClass('list-unstyled');
 
 
 

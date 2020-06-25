@@ -29,8 +29,8 @@ padding-top: 150px !important; padding-bot: 150px !important; ">
                                     }
                                 ?>
                                 <a href="#" class="blog_item_date">
-                                    <h3>15</h3>
-                                    <p>Jan</p>
+                                    <h3><?php the_time('d');?></h3>
+                                    <p><?php the_time('M');?></p>
                                 </a>
                             </div>
 
@@ -38,17 +38,15 @@ padding-top: 150px !important; padding-bot: 150px !important; ">
                                 <a class="d-inline-block" href="<?php the_permalink();?>">
                                     <h2 style="color: black "><?php the_title();?></h2>
                                 </a>
-                                <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                    he earth it first without heaven in place seed it second morning saying.</p>
+                                <p><?php echo excerpt('20');?></p>
                                 <ul class="blog-info-link list-unstyled">
-                                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    <li><i class="fa fa-user"></i><?php the_author();?></li>
                                 </ul>
                             </div>
                         </article>
 
                         <?php endwhile; else : ?>
-                            <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                            <p><?php esc_html_e( 'Huy!, parece que lo que estas buscando no se encuentra en neustra pagina, lo sentimos mucho :(' ); ?></p>
                         <?php endif; ?>
                         <nav class="blog-pagination justify-content-center d-flex">
                             <ul class="pagination">

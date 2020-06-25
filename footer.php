@@ -2,65 +2,39 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="row mb-5">
-                <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">About Us</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
+                    <div class="ftco-footer-widget">
+                        <h2 class="ftco-heading-2">Siguesnos en nuestras redes:</h2>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                            <li class="ftco-animate"><a href="https://www.facebook.com/Famarg-104780141189748" target="blank"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/comercializadora.famarg/" target="blank"><span class="icon-instagram"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.youtube.com/channel/UCvwG4Q8gn72B_sDaXqMuEdw" target="blank"><span class="icon-youtube"></span></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Recent Blog</h2>
-                        <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(<?php echo bloginfo('template_url');?>/images/image_1.jpg);"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                                <div class="meta">
-                                    <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
-                                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(<?php echo bloginfo('template_url');?>/images/image_2.jpg);"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                                <div class="meta">
-                                    <div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
-                                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-5 mb-md-5">
-                    <div class="ftco-footer-widget mb-4 ml-md-4">
-                        <h2 class="ftco-heading-2">Services</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Cooked</a></li>
-                            <li><a href="#" class="py-2 d-block">Deliver</a></li>
-                            <li><a href="#" class="py-2 d-block">Quality Foods</a></li>
-                            <li><a href="#" class="py-2 d-block">Mixed</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <h2 class="ftco-heading-2">¿Podemos ayudarte?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                                <li>
+                                    <a target="blank" href="https://www.google.com/search?rlz=1C1CHBF_esMX830MX830&sxsrf=ALeKk02vPQhpr-aZQ3D1JwX6p4Kpfb0LdA:1593105525033&ei=b9z0Xt--GLKc_Qbz96_oBA&q=comercializadora&oq=comercializadora&gs_lcp=CgZwc3ktYWIQAzIECCMQJzICCAAyAggAMgIIADICCAAyAggAMgUIABCDATICCAAyAggAMgIIADoHCAAQsQMQQzoFCAAQsQM6BwgjEOoCECc6BAgAEENQ_QxY7B9g6CBoAXAAeAGAAbYDiAHTG5IBCjAuMy4xMi4wLjGYAQCgAQGqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=2ahUKEwjt1KLHvJ3qAhWCg-AKHXoTB6wQvS4wAXoECAwQJw&uact=5&npsic=0&rflfq=1&rlha=0&rllag=20300848,-89404041,451&tbm=lcl&rldimm=9441205102441406414&lqi=ChBjb21lcmNpYWxpemFkb3JhWiQKEGNvbWVyY2lhbGl6YWRvcmEiEGNvbWVyY2lhbGl6YWRvcmE&phdesc=gX1kXve3Lug&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:10&rlst=f#rlfi=hd:;si:;mv:[[20.305782171219878,-89.40083840971839],[20.300620257323025,-89.41145995741736],null,[20.30320123577851,-89.40614918356788],18]">
+                                    <span class="icon icon-map-marker"></span><span class="text">Calle 47 x 38 y 36 Col. Mejorada, Oxkuztcab Yucatán, Mexíco</span>
+                                    </a> 
+                                </li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+52-1-997-102-56-78</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">comercializadora@famarg.com.mx</span></a></li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
+                    <div class="ftco-footer-widget">
+                        <?php if ( is_active_sidebar( 'footer_1' ) ) : ?>
+                            <?php dynamic_sidebar( 'footer_1' ); ?>
+                        <?php else : ?>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -72,7 +46,7 @@
                         Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </script> Todos los derechos reservador | Este sitio web fue elaborado por Yayo Venegas en colaboracion con Comercializadora Famarg <i class="icon-heart" aria-hidden="true"></i>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
@@ -83,7 +57,16 @@
 
 
     <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <div id="ftco-loader" class="show fullscreen">
+        <div class="awe-loading-wrapper">
+            <div class="awe-loading-icon">
+               <img src="<?php echo bloginfo('template_url');?>/images/logo_1.png" alt="images">
+            </div>
+            <div class="progress">
+               <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+         </div>
+    </div>
 
 
     <script src="<?php echo bloginfo('template_url');?>/js/jquery.min.js"></script>

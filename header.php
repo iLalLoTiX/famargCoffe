@@ -39,40 +39,17 @@
                 <img width="25%" src="<?php echo bloginfo('template_url');?>/images/logo_1.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="room.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nosotros</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="shop.html">Quienes somos</a>
-                            <a class="dropdown-item" href="product-single.html">Que hacemos</a>
-                            <a class="dropdown-item" href="room.html">Historia</a>
-                            <a class="dropdown-item" href="checkout.html">Equipo de trabajo</a>
-                            <a class="dropdown-item" href="checkout.html">Logotipo</a>
-                            <a class="dropdown-item" href="checkout.html">Misión, Visión y Valores</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="room.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="shop.html">Citricos</a>
-                            <a class="dropdown-item" href="product-single.html">Tuberculos</a>
-                            <a class="dropdown-item" href="room.html">Frutas</a>
-                            <a class="dropdown-item" href="checkout.html">Verduras</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="room.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Comunidad</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="shop.html">Recetas</a>
-                            <a class="dropdown-item" href="product-single.html">Momentos Famarg</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+	            <span class="oi oi-menu"></span> Menu
+	        </button>
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'superior',
+                'container' => 'div',
+                'container_class' => 'collapse navbar-collapse',
+                'container_id' => 'ftco-nav',
+                'items_wrap' => '<ul class="navbar-nav ml-auto">%3$s</ul>',
+            ));
+            ?>
         </div>
     </nav>
     <!-- END nav -->

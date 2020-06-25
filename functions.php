@@ -1,5 +1,6 @@
 <?php
 /** consultas */
+require get_template_directory() . '/includes/widgets.php';
 
 /**Menus */
 if(function_exists('register_nav_menus')){
@@ -28,12 +29,3 @@ function imagenDestacada(){
 }
 add_action('after_setup_theme', 'imagenDestacada');
 
-function custom_single_template($the_template) {
-    foreach ( (array) get_the_category() as $cat ) {
-        if ( locate_template("single-ficha-tecnica.php") ) {
-            return locate_template("single-ficha-tecnica.php");
-        }
-    }
-    return $the_template;
-}
-add_filter( 'single_template', 'custom_single_template');
