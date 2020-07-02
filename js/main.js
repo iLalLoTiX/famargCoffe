@@ -38,7 +38,7 @@
              if ($('#ftco-loader').length > 0) {
                  $('#ftco-loader').removeClass('show');
              }
-         }, 1);
+         }, 3000);
      };
      loader();
 
@@ -291,7 +291,22 @@
 
      $('ul .list-unstyled > ul').addClass('list-unstyled');
 
+     /*Estilos SideBar*/
+     $('.post_category_widget ul').addClass('list cat-list list-unstyled');
+     $('.post_category_widget ul li a').addClass('d-flex ');
 
-
+     $('.popular_post_widget ul').addClass('list cat-list list-unstyled');
+     $('.popular_post_widget ul li a').addClass('d-flex ');
 
  })(jQuery);
+
+ function printDiv(nombreDiv) {
+     var contenido = document.getElementById(nombreDiv).innerHTML;
+     var contenidoOriginal = document.body.innerHTML;
+
+     document.body.innerHTML = contenido;
+
+     window.print();
+
+     document.body.innerHTML = contenidoOriginal;
+ }

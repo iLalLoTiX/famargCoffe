@@ -6,9 +6,9 @@
                     <div class="ftco-footer-widget">
                         <h2 class="ftco-heading-2">Siguesnos en nuestras redes:</h2>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-                            <li class="ftco-animate"><a href="https://www.facebook.com/Famarg-104780141189748" target="blank"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.instagram.com/comercializadora.famarg/" target="blank"><span class="icon-instagram"></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.youtube.com/channel/UCvwG4Q8gn72B_sDaXqMuEdw" target="blank"><span class="icon-youtube"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/Famarg-104780141189748" target="_blank"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/comercializadora.famarg/" target="_blank"><span class="icon-instagram"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.youtube.com/channel/UCvwG4Q8gn72B_sDaXqMuEdw" target="_blank"><span class="icon-youtube"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -22,8 +22,8 @@
                                     <span class="icon icon-map-marker"></span><span class="text">Calle 47 x 38 y 36 Col. Mejorada, Oxkuztcab Yucatán, Mexíco</span>
                                     </a> 
                                 </li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+52-1-997-102-56-78</span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">comercializadora@famarg.com.mx</span></a></li>
+                                <li><span class="icon icon-phone"></span><span class="text">+52-1-997-102-56-78</span></li>
+                                <li><span class="icon icon-envelope"></span><span class="text">comercializadora@famarg.com.mx</span></li>
                             </ul>
                         </div>
                     </div>
@@ -46,29 +46,14 @@
                         Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> Todos los derechos reservador | Este sitio web fue elaborado por Yayo Venegas en colaboracion con Comercializadora Famarg <i class="icon-heart" aria-hidden="true"></i>
+                        </script> Todos los derechos reservados | Este sitio web fue elaborado por Yayo Venegas en colaboracion con Comercializadora Famarg <i class="icon-heart" aria-hidden="true"></i>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
             </div>
         </div>
     </footer>
-
-
-
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen">
-        <div class="awe-loading-wrapper">
-            <div class="awe-loading-icon">
-               <img src="<?php echo bloginfo('template_url');?>/images/logo_1.png" alt="images">
-            </div>
-            <div class="progress">
-               <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-         </div>
-    </div>
-
-
+    
     <script src="<?php echo bloginfo('template_url');?>/js/jquery.min.js"></script>
     <script src="<?php echo bloginfo('template_url');?>/js/jquery-migrate-3.0.1.min.js"></script>
     <script src="<?php echo bloginfo('template_url');?>/js/popper.min.js"></script>
