@@ -109,13 +109,17 @@ get_header();
                                                     </div>
                                                     <div class="bottom-area d-flex px-3">
                                                         <div class="m-auto d-flex">
-                                                            <a href="<?php the_permalink();?>" class="buy-now d-flex justify-content-center align-items-center mx-1">
+
+                                                            <?php if(get_post_meta($post->ID, 'linkproducto', true)){?>
+                                                            <a href="<?php the_field('linkproducto'); ?>" class="buy-now d-flex justify-content-center align-items-center mx-1">
                                                                 <span style="color:white"><i class="fa fa-eye"></i></span>
                                                             </a>
+                                                            <?php }?>
+
                                                             <a href="<?php the_permalink();?>" class="buy-now d-flex justify-content-center align-items-center mx-1">
                                                                 <span style="color:white"><i class="fa fa-info"></i></span>
                                                             </a>
-                                                            
+
                                                             <?php global $post;
                                                                 if(get_the_tags()){
                                                                     foreach(get_the_tags($post->ID) as $tag)
@@ -216,9 +220,13 @@ get_header();
                                             </div>
                                             <div class="bottom-area d-flex px-3">
                                                 <div class="m-auto d-flex">
-                                                    <a href="<?php the_permalink();?>" class="buy-now d-flex justify-content-center align-items-center mx-1">
+                                                
+                                                    <?php if(get_post_meta($post->ID, 'linkproducto', true)){?>
+                                                    <a href="<?php the_field('linkproducto'); ?>" class="buy-now d-flex justify-content-center align-items-center mx-1">
                                                         <span style="color:white"><i class="fa fa-eye"></i></span>
                                                     </a>
+                                                    <?php }?>
+
                                                     <a href="<?php the_permalink();?>" class="buy-now d-flex justify-content-center align-items-center mx-1">
                                                         <span style="color:white"><i class="fa fa-info"></i></span>
                                                     </a>

@@ -41,45 +41,45 @@ get_header();
                             <tbody class="tablaCuerpo">
                                 <tr>
                                     <td>FORMA:</td>
-                                    <td>REDONDA</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?></td>
                                     <td>TEMPERATURA DE RECIBO:</td>
-                                    <td>TEMPERATURA AMBIENTE</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?></td>
                                 </tr>
                                 <tr>
                                     <td>COLOR:</td>
-                                    <td>VERDE OBSCURO</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?></td>
                                     <td>EMBALAJE:</td>
-                                    <td>PLASTICO CARTON</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?></td>
                                 </tr>
                                 <tr>
                                     <td>TEXTURA:</td>
-                                    <td>PIEL DELGADA, INTERIOR CRUJIENTE</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?></td>
                                     <td>PRESENTACION:</td>
-                                    <td>18 KG</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?> KG</td>
                                 </tr>
                                 <tr>
                                     <td>PESO MINIMO:</td>
-                                    <td>250 KG</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?> KG</td>
                                     <td>TEMPERATURA DE ANAQUEL:</td>
-                                    <td>VITRINA - AMBIENTE</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?></td>
                                 </tr>
                                 <tr>
                                     <td>PESO MAXIMO:</td>
-                                    <td>750 KG</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?> KG</td>
                                     <td>HUMEDAD:</td>
-                                    <td>N/A</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?></td>
                                 </tr>
                                 <tr>
                                     <td>CALIBRE:</td>
-                                    <td>N/A</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?></td>
                                     <td>PUNTO DE CONGELACION:</td>
-                                    <td>N/A</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?></td>
                                 </tr>
                                 <tr>
                                     <td>GRADOS BRIX:</td>
-                                    <td>N/A</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?></td>
                                     <td>ROTACIÓN:</td>
-                                    <td>N/A</td>
+                                    <td><?php if(get_post_meta($post->ID, 'sku', true)){ echo get_post_meta($post->ID, 'sku', true); }else{ echo 'N/A';}?></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -89,8 +89,8 @@ get_header();
                             <thead class="encabezado">
                                 <tr>
                                     <th>3. FOTOGRAFÍA</th>
-                                    <th>2. TEMPORADA</th>
-                                    <th>3. ZONA DE PRODUCCION</th>
+                                    <th>4. TEMPORADA</th>
+                                    <th>5. ZONA DE PRODUCCION</th>
                                 </tr>
                             </thead>
                             <tbody class="tablaCuerpo">
@@ -120,38 +120,18 @@ get_header();
                                         <?php endif; ?>
                                     </td>
                                     
-                                    <td style="width: 300px;">
-                                        <?php
-                                        $image = get_field('zona');
+                                    <td class="text-center" style="width: 300px;">
+                                        <?php $image = get_field('zona');
                                         if( $image ):
 
                                             // Image variables.
-                                            $url = $image['url'];
-                                            $title = $image['title'];
-                                            $alt = $image['alt'];
-                                            $caption = $image['caption'];
+                                            $url = $image['url']; $title = $image['title']; $alt = $image['alt'];
 
                                             // Thumbnail size attributes.
-                                            $size = 'thumbnail';
-                                            $thumb = $image['sizes'][ $size ];
-                                            $width = $image['sizes'][ $size . '-width' ];
-                                            $height = $image['sizes'][ $size . '-height' ];
-
-                                            // Begin caption wrap.
-                                            if( $caption ): ?>
-                                                <div class="wp-caption">
-                                            <?php endif; ?>
-
-                                            <a href="<?php echo esc_url($url); ?>" title="<?php echo esc_attr($title); ?>">
-                                                <img src="<?php echo esc_url($size); ?>" alt="<?php echo esc_attr($alt); ?>" />
-                                            </a>
-
-                                            <?php 
-                                            // End caption wrap.
-                                            if( $caption ): ?>
-                                                <p class="wp-caption-text"><?php echo esc_html($caption);?></p>
-                                                </div>
-                                            <?php endif; ?>
+                                            $size = 'thumbnail'; $thumb = $image['sizes'][ $size ]; ?>
+                                                    <a href="<?php echo esc_url($url); ?>" title="<?php echo esc_attr($title); ?>">
+                                                        <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" />
+                                                    </a>
                                         <?php endif; ?>
                                     </td>
                                 </tr>
@@ -162,7 +142,7 @@ get_header();
                         <table class="table table-bordered table-sm">
                             <thead class="encabezado">
                                 <tr>
-                                    <th>5. INFORMACION ADICIONAL</th>
+                                    <th>6. INFORMACION ADICIONAL</th>
                                 </tr>
                             </thead>
                             <tbody class="tablaCuerpo">
@@ -172,6 +152,71 @@ get_header();
                                     </td>
                                 </tr>
                             </tbody>
+                        </table>
+					</div>
+                    <div class="cart-list">
+                        <table class="table table-bordered table-sm">
+                            <thead class="encabezado">
+                                <tr>
+                                    <th colspan="4">7. INFORMACION ADICIONAL</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tablaCuerpo">
+                                <tr>
+                                    <td class="text-center" >
+                                    <!--DEFORMES-->
+                                    <?php $image = get_field('zona');
+                                    if( $image ):
+                                    $url = $image['url']; $title = $image['title']; $alt = $image['alt'];
+                                    $size = 'thumbnail'; $thumb = $image['sizes'][ $size ]; ?>
+                                        <a href="<?php echo esc_url($url); ?>" title="<?php echo esc_attr($title); ?>">
+                                            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" />
+                                        </a>
+                                    <?php endif; ?>
+                                    </td>
+                                    <td class="text-center" >
+                                    <!--CICATRIZADAS-->
+                                    <?php $image = get_field('zona');
+                                    if( $image ):
+                                    $url = $image['url']; $title = $image['title']; $alt = $image['alt'];
+                                    $size = 'thumbnail'; $thumb = $image['sizes'][ $size ]; ?>
+                                        <a href="<?php echo esc_url($url); ?>" title="<?php echo esc_attr($title); ?>">
+                                            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" />
+                                        </a>
+                                    <?php endif; ?>
+                                    </td>
+                                    <td class="text-center" >
+                                    <!--RAYADA-->
+                                    <?php $image = get_field('zona');
+                                    if( $image ):
+                                    $url = $image['url']; $title = $image['title']; $alt = $image['alt'];
+                                    $size = 'thumbnail'; $thumb = $image['sizes'][ $size ]; ?>
+                                        <a href="<?php echo esc_url($url); ?>" title="<?php echo esc_attr($title); ?>">
+                                            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" />
+                                        </a>
+                                    <?php endif; ?>
+                                    </td>
+                                    <td class="text-center" >
+                                    <!--MALTRADAS-->
+                                    <?php $image = get_field('zona');
+                                    if( $image ):
+                                    $url = $image['url']; $title = $image['title']; $alt = $image['alt'];
+                                    $size = 'thumbnail'; $thumb = $image['sizes'][ $size ]; ?>
+                                        <a href="<?php echo esc_url($url); ?>" title="<?php echo esc_attr($title); ?>">
+                                            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" />
+                                        </a>
+                                    <?php endif; ?>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="encabezado">
+                                <tr colspan="4">
+                                    <th>DEFORMES</th>
+                                    <th>CICATRIZADAS</th>
+                                    <th>RAYADA</th>
+                                    <th>MALTRATADAS</th>
+                                </tr>
+                            </tfoot>
                         </table>
 					</div>
                 <?php endwhile; else : ?>

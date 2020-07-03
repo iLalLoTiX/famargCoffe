@@ -34,11 +34,6 @@ padding-top: 150px !important; padding-bot: 150px !important; ">
                     </div>
                     <div style="text-align: justify;">
                         <p>
-                        Comercializadora Famarg no surgió como un plan de la familia Argüello en dedicarse a la comercialización
-                        de frutas y verduras; es producto de las experiencias vividas de los socios Alexander Argüello y Gerardo 
-                        Argüello como empleados de una comercializadora en el que prestaban sus servicios.
-                        </p>
-                        <p>
                         Comercializadora Famarg no surgió como un plan de la familia Argüello en dedicarse a la comercialización 
                         de frutas y verduras; es producto de las experiencias vividas de los socios Alexander Argüello y Gerardo 
                         Argüello como empleados de una comercializadora en el que prestaban sus servicios.
