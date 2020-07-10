@@ -8,7 +8,7 @@
                 <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
                     <div class="col-md-8 col-sm-12 text-center ftco-animate">
-                        <span class="subheading">Bienvenido!</span>
+                        <span class="subheading"><?php echo get_theme_mod('slider1-setting');?></span>
                         <h1 class="mb-4">Nuestra comunidad &amp; momentos Famarg.</h1>
                         <p class="mb-4 mb-md-5">¡Súmate! Existen diversas recetas creadas para ti con nuestra variedad en productos locales y nacionales.</p>
                         <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Momentos Famarg</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Productos</a></p>
@@ -57,6 +57,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-10">
                 <h1 class="text-center mb-5">Comercializadora Famarg</h1>
+                
                     <div class="row">
                         <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 text-center">

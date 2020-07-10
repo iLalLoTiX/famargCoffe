@@ -34,37 +34,25 @@ get_header();
                         <div class="d-none col-md-12 d-sm-block nav-link-wrap mb-5">
                             <div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <?php 
-                            $testArray = array();
-                            $testName = array();
-                            foreach( get_categories() as $category ){
-                                if ($category->cat_name  != ('Recetas'))
-                                {
-                                    $catId = $category->cat_ID; 
-                                    $catName = $category->cat_name;
-                                    $testArray[] = $catId;
-                                    $testName[] = $catName;
-                            ?>
-                                <a class="nav-link" data-toggle="pill" role="tab" aria-selected="false" href="#<?php echo $catId;?>"><?php echo $category->cat_name;?></a>
-                            <?php
-                                }
-                            }
-                            ?>
+                            $porciones = explode(",",  get_theme_mod( 'cstmzr_categories' ));
+                            foreach( $porciones as $category ){?>
+                                <a class="nav-link" data-toggle="pill" role="tab" aria-selected="false" href="#<?php echo $category;?>"><?php  echo get_cat_name($category);?></a>
+                            <?php }?>
                             </div>
                         </div>
                         <div class="d-none col-md-12 d-sm-block">
 
                             <div class="tab-content" id="v-pills-tabContent">
                             <?php 
-                                for($i=0;$i<count($testArray);$i++) 
+                                for($i=0;$i<count($porciones);$i++) 
                                 {
                             ?>
-                                <div class="tab-pane fade<?php if($i <= 0){echo 'show active';}?>" id="<?php echo $testArray[$i]; ?>" role="tabpanel">
+                                <div class="tab-pane fade<?php if($i <= 0){echo 'show active';}?>" id="<?php echo $porciones[$i]; ?>" role="tabpanel">
                                     <div class="row">
                                         <!-- start -->
                                         <?php 
                                         $args = array(
-                                            'category_name'=>$testName[$i],
-                                            'cat' => '-5'
+                                            'category_name'=> get_cat_name($porciones[$i]),
                                         );
                                         query_posts($args);
                                         while(have_posts()): 
@@ -158,7 +146,7 @@ get_header();
         <div class="d-xl-none d-lg-none d-md-none col-sm-12 nav-link-wrap sticky">
             <div class="nav ftco-animate nav-pills justify-content-center">
                 <div class="row justify-content-center mb-5">
-                    <div class="nav-link active show" id="cat-sm" data-toggle="pill" role="tab" aria-selected="false"><?php echo $testName[0];?></div>
+                    <div class="nav-link active show" id="cat-sm" data-toggle="pill" role="tab" aria-selected="false"><?php echo $porciones[0];?></div>
                 </div>  
             </div>
         </div>
@@ -168,16 +156,15 @@ get_header();
                     <div class="d-xl-none d-lg-none d-md-none col-sm-12">
                         <div class="carousel-work owl-carousel">
                         <?php 
-                            for($i=0;$i<count($testArray);$i++) 
+                            for($i=0;$i<count($porciones);$i++) 
                             {
                                 
                         ?>
                             <div class="row">
-                            <h2 class="sticky"><?php echo $testName[$i]; ?></h2>
+                            <h2 class="sticky"><?php echo get_cat_name($porciones[$i]); ?></h2>
                                 <?php 
                                 $args = array(
-                                    'category_name'=>$testName[$i],
-                                    'cat' => '-5'
+                                    'category_name'=>get_cat_name($porciones[$i]),
                                 );
                                 query_posts($args);
                                 while(have_posts()): 

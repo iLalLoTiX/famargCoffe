@@ -34,7 +34,7 @@
 
 <body>
     <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen">
+    <!-- <div id="ftco-loader" class="show fullscreen">
         <div class="awe-page-loading">
             <div class="awe-loading-wrapper">
                 <div class="awe-loading-icon">
@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>  
-    </div>
+    </div> -->
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">

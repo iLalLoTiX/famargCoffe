@@ -1,6 +1,8 @@
 <?php
-/** consultas */
+/** Requerido */
 require get_template_directory() . '/includes/widgets.php';
+require get_template_directory() . '/includes/customTemplateSliders.php';
+require get_template_directory() . '/includes/customTemplateProductos.php';
 
 /**Menus */
 if(function_exists('register_nav_menus')){
@@ -28,4 +30,3 @@ function imagenDestacada(){
     add_image_size('tamano1', 100, 100, true);
 }
 add_action('after_setup_theme', 'imagenDestacada');
-
