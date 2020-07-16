@@ -8,9 +8,12 @@
                 <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
                     <div class="col-md-8 col-sm-12 text-center ftco-animate">
-                        <span class="subheading"><?php echo get_theme_mod('slider1-setting');?></span>
-                        <h1 class="mb-4">Nuestra comunidad &amp; momentos Famarg.</h1>
-                        <p class="mb-4 mb-md-5">¡Súmate! Existen diversas recetas creadas para ti con nuestra variedad en productos locales y nacionales.</p>
+                        <!--Bienvenido-->
+                        <span class="subheading"><?php echo get_theme_mod('titulo1-setting');?></span>
+                        <!--Nuestra comunidad & momentos famarg-->
+                        <h1 class="mb-4"><?php echo get_theme_mod('subtitulo1-setting');?></h1>
+                        <!--¡Súmate! Existen diversas recetas creadas para ti con nuestra variedad en productos locales y nacionales.-->
+                        <p class="mb-4 mb-md-5"><?php echo get_theme_mod('parrafo1-setting');?></p>
                         <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Momentos Famarg</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Productos</a></p>
                     </div>
 
@@ -24,10 +27,13 @@
                 <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
                     <div class="col-md-8 col-sm-12 text-center ftco-animate">
-                        <span class="subheading">Bienvenido Proveedor!</span>
-                        <h1 class="mb-4">Nuestro proyecto con proveedores</h1>
-                        <p class="mb-4 mb-md-5">¡Únete! El trato con los productores y campesinos reconoce la ardua labor en el campo y  valora la calidad en sus productos.</p>
-                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+                        <!--Bienvenido Proveedor!-->
+                        <span class="subheading"><?php echo get_theme_mod('titulo2-setting');?></span>
+                        <!--Nuestro proyecto con proveedores-->
+                        <h1 class="mb-4"><?php echo get_theme_mod('subtitulo2-setting');?></h1>
+                        <!--¡Únete! El trato con los productores y campesinos reconoce la ardua labor en el campo y  valora la calidad en sus productos.-->
+                        <p class="mb-4 mb-md-5"><?php echo get_theme_mod('parrafo2-setting');?></p>
+                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Nuestro compromiso</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
                     </div>
 
                 </div>
@@ -40,10 +46,13 @@
                 <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
                     <div class="col-md-8 col-sm-12 text-center ftco-animate">
-                        <span class="subheading">Bienvenido!</span>
-                        <h1 class="mb-4">Creamy Hot and Ready to Serve</h1>
-                        <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+                        <!--Bienvenido!-->
+                        <span class="subheading"><?php echo get_theme_mod('titulo3-setting');?></span>
+                        <!---->
+                        <h1 class="mb-4"><?php echo get_theme_mod('subtitulo3-setting');?></h1>
+                        <!---->
+                        <p class="mb-4 mb-md-5"><?php echo get_theme_mod('parrafo3-setting');?></p>
+                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Clientes</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
                     </div>
 
                 </div>

@@ -22,16 +22,21 @@
                             </div>
                             
                             <div class="blog_details">
+                                
                             <h1 style="color: black "><?php the_title();?></h1>
+                            
                             
                                 <ul class="blog-info-link list-unstyled">
                                     <li><i class="fa fa-user"></i><?php the_author();?></li>
                                     <li><?php the_tags('<span>Etiquetas: </span>', '-', '' );?></li>
                                     <li><?php the_category('<span>Etiquetas: </span>', '-', '' );?></li>
+                                    <li><?php bs_social_share();?></li>
                                 </ul>
                                 <div>
                                     <?php the_content();?>
                                 </div>
+                                <h5>Compartir:</h5>
+                                <?php bs_social_share();?>
                             </div>
                         </article>
 

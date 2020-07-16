@@ -146,7 +146,7 @@ get_header();
         <div class="d-xl-none d-lg-none d-md-none col-sm-12 nav-link-wrap sticky">
             <div class="nav ftco-animate nav-pills justify-content-center">
                 <div class="row justify-content-center mb-5">
-                    <div class="nav-link active show" id="cat-sm" data-toggle="pill" role="tab" aria-selected="false"><?php echo $porciones[0];?></div>
+                    <div class="nav-link active show" id="cat-sm" data-toggle="pill" role="tab" aria-selected="false"><?php echo get_cat_name($porciones[0]);?></div>
                 </div>  
             </div>
         </div>

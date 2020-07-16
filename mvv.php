@@ -10,7 +10,7 @@ get_header();
         <div class="about_info mb-5">
             <div class="section_title">
                 <h2 class="text-center" style="color: #2c1a1a">Misión, Visión y Valores</h2>
-                <span class="text-center">Nuestros ideales nos han ayudado a contruir lo que hoy es Famarg</span>
+                <span class="text-center">Nuestros ideales nos han ayudado a construir lo que hoy es Famarg</span>
             </div>
             <div class="align-center border-choose">
                 <div class="images">

@@ -298,6 +298,42 @@
      $('.popular_post_widget ul').addClass('list cat-list list-unstyled');
      $('.popular_post_widget ul li a').addClass('d-flex ');
 
+     $('.dc-social a').click(function(event) {
+         event.preventDefault();
+
+         //popup 
+         var width = 575,
+             height = 520,
+             left = ($(window).width() - width) / 2,
+             top = ($(window).height() - height) / 2,
+             opts = 'status=1' +
+             ',width=' + width +
+             ',height=' + height +
+             ',top=' + top +
+             ',left=' + left;
+
+         window.open($(this).attr("href"), 'share', opts);
+
+     });
+
+     $('.testi2').owlCarousel({
+
+         margin: 20,
+         nav: false,
+         dots: true,
+         responsiveClass: true,
+         responsive: {
+             0: {
+                 items: 1,
+                 nav: false
+             },
+             1170: {
+                 items: 1
+             }
+         }
+     });
+
+
  })(jQuery);
 
  function printDiv(nombreDiv) {
